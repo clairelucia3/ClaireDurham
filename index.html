@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous" />
+        <style>
+            body {
+                font-family: georgia;
+            }
+            .navbar {
+                background-color: #001524;
+            }
+            .offcanvas{
+                background-color: #001524}
+
+            .navbar-brand {
+                font-family: Georgia;
+                padding-left: 10px;
+                letter-spacing: 5px;
+            }
+
+            .Portrait {
+                border-radius: 50%;
+            }
+            #AboutMe {
+                color: white;
+                transition-property: inherit;
+                transition:all .5s;
+            }
+            #AboutMe:hover {
+                color: white;
+                letter-spacing: 5px;
+            }
+            #Gallery {
+                width: 100%;
+                color: white;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            #Gallery:hover {
+                color: white;
+                letter-spacing: 5px;
+            }
+           
+            #btn6:hover {
+                letter-spacing: 5px;
+                color: white;
+                text-align: center;
+            }
+
+            #btn6 {
+                background-color: #001524;
+                color: white;
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                width: 100%;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            @media screen and (max-width: 600px) {
+                #saying {
+                    font-size: 50px;
+                }
+            }
+            
+            @media screen and (max-width: 600px) {
+                #name {
+                    font-size: 0px;
+                }
+            }
+             @media screen and (min-width: 601px) {
+                #name {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                #talk {
+                    font-size: 0px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #saying {
+                    font-size: 50px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #AboutMe {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                #AboutMe {
+                    font-size: 50px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #Gallery {
+                    font-size: 30px;
+                }
+            }
+             @media screen and (max-width: 600px) {
+                #Gallery {
+                    font-size: 50px;
+                }
+            }
+            @media screen and (max-width: 600px) {
+                #bottom {
+                    font-size: 40px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #bottom {
+                    font-size: 30px;
+                }
+            }
+            @media screen and (min-width: 601px) {
+                #talk {
+                    font-size: 3vw;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar sticky-top navbar-dark navbar-expand-xlg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="logo.png" alt="logo" width="75px"
+                /></a>
+                <a class="navbar-brand" id="name" href="index.html">Claire Durham</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="1"
+                    id="offcanvasNavbar"
+                    arialabelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link active" aria-current="page" href="index.html"><h3>Home</h3> </a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="Gallery-Painting.html" aria-expanded="false"
+                                    ><h3>Gallery</h3></a
+                                >
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link" href="AboutMe.html"><h3>Contact</h3> </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="CarouselGrandma.png" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="CarouselSunflowers.png" class="d-block w-100 h-300" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="CarouselChristmas.png" class="d-block w-100 h-300" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Rubed%20copy.png" class="d-block w-100 h-300" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="CarouselCountdown.png" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="CarouselOutlaws.png" class="d-block w-100 h-300" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Rubed%20copy.png" class="d-block w-100 h-300" alt="..." />
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-sm-12 col-md-6" id="saying">
+                    <div class="p-5">Making others happy, doing what I love."</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid gx-5">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 text-center gy-5">
+                    <img src="IMG_0862.jpg" alt="Portrait" style="width: 75%; border-radius: 50%" />
+                </div>
+                <div class="col gy-5 gx-5">
+                    <h1 style="font-size: 5vmax"><b>Hello, I'm Claire.</b></h1>
+                    <h3 style="font-size: 4vh">
+                        I am a third year student at La Salle University and recieving an education in Digital Arts and
+                        Art History while also playing Division 1 Water Polo. Passion and hard work lead me to where I
+                        am today and I could not be more excited to show my creative skills and talents to the world!
+                    </h3>
+                    <div class="row">
+                        <div class="col gy-5"></div>
+                        <a href="AboutMe.html" class="btn btn-danger" id="AboutMe">More About Me</a>
+                    </div></div></div>
+                    <div class="row">
+                <div class="col gy-5 text-center" id="SeeGallery">
+                    <a href="Gallery-Painting.html" class="btn btn-danger" id="Gallery">Gallery</a>
+                </div>
+                </div>
+            
+        </div>
+
+        <br />
+
+       <div class="container-fluid text-center">
+            </div>
+            
+        <br/>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col" id="btn6">
+                    <a class="btn text-light" href="AboutMe.html" id="bottom">Let's Work Together</a>
+                </div></div></div>
+        
+    </body>
+</html>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
