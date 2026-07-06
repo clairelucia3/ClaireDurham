@@ -62,7 +62,8 @@ h2 {
           font-family:Cubano
 }
 
-h4  {
+h4  {  
+          text-align: left;
           font-family: "Roboto Mono", monospace;
 }
 
@@ -73,11 +74,9 @@ span {
 .sidenav {
           list-style-type: none;
           margin: 0;
-          padding-top:100px;
           width: 25%;
           height: 100%;
-          position: fixed; 
-          top: 10%;
+          position: fixed;
 }
 
 .content {
