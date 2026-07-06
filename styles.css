@@ -67,6 +67,11 @@ h4  {
           font-family: "Roboto Mono", monospace;
 }
 
+h5 {     
+          text-align: left;
+          font-family:Cubano;
+}
+
 span {
           font-family:Cubano
 }
