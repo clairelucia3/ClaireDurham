@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
+        
+
+        
+        <style>
+            
+            @media screen and (min-width: 1401px) {
+                span {
+                    font-size: 5rem;
+                }
+            }
+            
+             @media screen and (min-width: 992px) and (max-width:1400px) {
+                span {
+                    font-size: 4rem;
+                }
+            }
+            @media screen and (min-width: 769px) and (max-width:992px) {
+                span {
+                    font-size: 3rem;
+                }
+            }
+            @media screen and (min-width: 677px) and (max-width: 768px) {
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+            @media screen and (max-width: 676px) {
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+            
+            span, h1 {
+                line-height: 1
+            }
+            
+            
+            .Work{
+                width: 100%;
+                border-width: medium;
+                border-color:#ff776e;
+                border-radius: 20px;
+                background-color:transparent;
+                font-family:"Roboto Mono", monospace;
+                font-size: 2rem;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            .Work:hover{
+                background-color:#ff776e;
+                transform: scale(1.05);
+            }
+            
+            .img-card {
+                position:relative;
+                display: inline-block;
+                overflow: hidden;
+                text-decoration: none
+            }
+            
+            .img-card img {
+                display:block;
+                width: 100%;
+                transition: transform 0.4s ease;
+            }
+            
+            .overlay {
+                position: absolute;
+                inset: 0;
+                background: rgba (0,0,0,0);
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                transition: background 0.4s ease;
+            }
+            
+            .overlay h2 {
+                color:black;
+                margin: 20px;
+                opacity: 0;
+                transform: translateY (8px);
+                transition: opacity 0.4 s ease. transform 0.4s ease;
+            }
+            
+            .img-card:hover img {
+                transform: scale(1.05);
+            }
+            
+            .img-card:hover .overlay {
+                background:white;
+            }
+            
+            .img-card:hover .overlay h2 {
+                opacity: 1;
+                transform:translateY(0)
+            }
+            
+            
+            .HeadShot{
+                overflow: hidden;
+            }
+            
+            .img {
+                object-fit: cover
+            }
+            
+             .image-container1 {
+                background-image: url(backgroundimage1.png);
+                background-size:cover;
+                background-position: left top;
+                background-position:fixed;
+                max-height: 1000px;
+            }
+            .image-container2 {
+                background-image: url(backgroundimage2.png);
+                background-size: cover;
+                background-position: right top;
+                background-position:fixed;
+                min-height: fit-content;
+            }
+            
+            #Instagram, #LinkedIn, #Contact, #Resume{
+                width: 100%;
+                border-width: medium;
+                border-color:#e6c527;
+                background-color:white;
+                border-radius: 20px;
+                transition-property: inherit;
+                transition-duration:0.4s;
+            }
+            
+            #Instagram:hover, #LinkedIn:hover, #Contact:hover, #Resume:hover {
+                border-width: medium;
+                border-color:#e6c527;
+                background-color:#e6c527;
+                border-radius: 20px;
+                transform: scale(1.05);
+            }
+    
+        </style>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="Images/logo.png" alt="logo" width="100px"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="1"
+                    id="offcanvasNavbar"
+                    arialabelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item m-3 align-content-center">
+                                <a class="nav-link" href="Gallery.html" aria-expanded="false"><h3>Case Studies </h3></a>
+                            </li>
+                            <li class="nav-item m-3 align-content-center">
+                                <a class="nav-link" href="Contact.html" aria-expanded="false"><h3>Contact</h3> </a>
+                            </li>
+                            <li class="nav-item m-3 align-content-center">
+                                <a class="nav-link" href="AboutMe.html" aria-expanded="false"><h3>About</h3></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <div container="fluid">
+            
+            <div class="row" style="background-color:white">
+            <div class="HeadShot col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 justify-content-center">
+                    <img src="Images/Headshot.png" class="Headshot" alt="Portrait">
+                </div>
+            
+                <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 align-content-center p-5">
+                    <h1>Hello, I'm
+                        <br></h1>
+                        <span style="color:#e1c422"> Claire </span>
+                        <span style="color:#ff776e"> Durham,</span>
+                    
+                    <div style="display: flex; align-items: baseline; gap: 10px; white-space: nowrap">
+                       <h1>a</h1> 
+                        <span style="display: inline-block; min-width: 600px; color:cornflowerblue; position: relative; overflow: hidden">
+                        <span id="word-text" style="display: inline-block; transition: transform 0.4s ease, opacity 0.4s ease;">Graphic Designer.</span>
+                        </span>
+                    </div>
+                        <script>
+                            const words = ["Graphic Designer.", "Brand Designer.", "Illustrator.", "Web designer."];
+                            let i = 0;
+                            const el = document.getElementById('word-text');
+                            setInterval(() => {
+                            el.style.opacity = '0';
+                            el.style.transform = 'translateY(-12px)';
+                            setTimeout(() => {
+                            i = (i + 1) % words.length;
+                            el.textContent = words[i];
+                            el.style.transform = 'translateY(12px)';
+                            requestAnimationFrame(() => {
+                            el.style.opacity = '1';
+                            el.style.transform = 'translateY(0)';
+                            });
+                            }, 400);
+                            }, 3000);
+                        </script>
+            
+                    <div class="row py-3">
+                <div class="col-sm-12 col-md-10 col-lg-10 col-xl-7">
+                    <a href="Gallery.html" class="btn Work">Check Out My Work.</a>
+                </div>
+            </div>
+                    
+                    
+                
+                
+        
+                </div>
+            </div>
+                
+                
+            <div class="row justify-content-center p-5">
+            <div class="col-sm-12 col-lg-4">
+                <a href="UDCA.html" class="img-card">
+                    <img src="Images/Index3.png" alt="Portrait" width="100%" />
+                    <div class="overlay">
+                        <h2>Upper Dublin Chinese American Association</h2>
+                    </div>
+                    </a>
+                </div>
+        
+            <div class="col-sm-12 col-lg-4">
+                    <a href="Olney.html" class="img-card">
+                    <img src="Images/Index2.png" alt="Portrait" width="100%" />
+                    <div class="overlay">
+                        <h2>Olney Outlaws</h2>
+                    </div>
+                    </a>
+                </div>
+           
+            <div class="col-sm-12 col-lg-4">
+                    <a href="Mama.html" class="img-card">
+                    <img src="Images/Index1.png" alt="Portrait" width="100%" />
+                    <div class="overlay">
+                        <h2>Mama Mirs Kitchen</h2>
+                    </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        
+         <div class="image-container1">
+          <div class="container-fluid">
+            <div class="row p-5 justify-content-center">
+                <div class="col-12 text-center"><p class="text-content"><h1>Below the Surface...</h1>
+                </div><br/>
+                <div class="col-lg-6 col-sm-10"><p class="text-content">I’m a graphic designer who wants to tell a story. 
+                    I have a love for all things creative but a special passion for successful branding, textures, bold fonts, and interactive web design. Much of my creative career was centered around painting and I approach Graphic Design in a similiar way.
+                <p>I recently graduated from La Salle University, studying both Art History and Digital Arts/Multimedia with an Honors distinction. Blending these two fields of tradition and innovation has given me a unique perspective on how art has shaped culture through history and how design continues that story today. </p>
+                </div>
+                <br><br>
+             </div>
+          </div>
+        </div>
+        
+        <div class="image-container2">
+          <div class="container-fluid">
+              <div class="col-sm-12 col-md-8 p-5">
+                <div class="row">
+                    <h2>Stay in the Loop...</h2>
+                    
+                    <div class="row">
+                        <div class="col gy-5"><a href="https://www.instagram.com/creating_claire_/" class="btn btn-light" id="Instagram"><h4>Instagram</h4></a>
+                        </div>
+                        
+                        <div class="col gy-5"><a href="https://www.linkedin.com/in/claire-durham2003/" class="btn btn-light" id="LinkedIn"><h4>LinkedIn</h4></a>
+                        </div>
+                    </div>
+                
+    
+                    <div class="row">
+                        <div class="col gy-5"><a href="Rusume.pdf" class="btn btn-light" width="100%" id="Resume"><h4>Resume</h4></a>
+                        </div>
+                        <div class="col gy-5"><a href="mailto:clairelucia3@gmail.com" class="btn btn-light" id="Contact"><h4>Contact</h4></a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+          </div>
+    </div>
+        
+        <!--This is the FOOTER-->
+        <div class="container-fluid text-center" style="background-color:#1E2124">
+                <div class="row p-3">
+                    <div class="col">
+                        <a class="navbar-brand text-light" href="index.html">
+                        <img class="img-fluid object-fit-cover" src="Images/logo.png" alt="logo" width="100px"/><h3>Claire Durham</h3></a>
+                    </div>
+                </div>
+                 
+                <div class="row p-3">
+                    <div class="col">
+                        <a href="Gallery.html" class="footer"><h3>Case Studies</h3></a>
+                    </div>
+                    <div class="col">
+                        <a href="Contact.html" class="footer"><h3>Contact</h3> </a>
+                    </div>
+                    <div class="col">
+                        <a href="AboutMe.html" class="footer"><h3>About</h3></a>
+                    </div>
+                </div>
+        </div>
+
+        
+        
+     </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

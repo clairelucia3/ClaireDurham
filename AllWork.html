@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://use.typekit.net/xbk4dlc.css">
+        <style>
+            
+            
+            .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.col {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+        
+.Banner {
+    background-image: url(Mama-Banner.png);
+    background-size:cover;
+    background-position:fixed;
+    height:15rem;
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        
+        <nav class="navbar sticky-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"
+                    ><img class="img-fluid object-fit-cover" src="Images/logo.png" alt="logo" width="100px"
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="1"
+                    id="offcanvasNavbar"
+                    arialabelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item m-3 align-content-center">
+                                <a class="nav-link" href="Gallery.html" aria-expanded="false"><h3>Case Studies </h3></a>
+                            </li>
+                            <li class="nav-item m-3 align-content-center">
+                                <a class="nav-link" href="Contact.html" aria-expanded="false"><h3>Contact</h3> </a>
+                            </li>
+                            <li class="nav-item m-3 align-content-center">
+                                <a class="nav-link" href="AboutMe.html" aria-expanded="false"><h3>About</h3></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+
+            <ul class="sidenav">
+                <li class="nav-link-active" href="#top"><h2>All Work</h2></li>
+                Click the images to enlarge and see more clearly.
+                <li><hr class="line"></li>
+                <li class="li"> <a class="btn VerticalLi" href="Gallery.html"><h4>Back</h4></a></li>
+            </ul>
+        
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image1">
+                        <img src="Images/AllWork-1.jpg" width="100%"></button>
+                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image2">
+                        <img src="Images/AllWork-2.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image16">
+                        <img src="Images/AllWork-16.png" width="100%"></button>
+                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image3">
+                        <img src="Images/AllWork-3.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image12">
+                        <img src="Images/AllWork-12.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image14">
+                        <img src="Images/AllWork-14.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image21">
+                        <img src="Images/AllWork-21.png" width="100%"></button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image5">
+                        <img src="Images/AllWork-5.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image15">
+                        <img src="Images/AllWork-15.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image4">
+                        <img src="Images/AllWork-4.jpg" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image10">
+                        <img src="Images/AllWork-10.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image6">
+                        <img src="Images/AllWork-6.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image11">
+                        <img src="Images/AllWork-11.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image18">
+                        <img src="Images/AllWork-18.JPG" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image20">
+                        <img src="Images/AllWork-20.png" width="100%"></button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image7">
+                        <img src="Images/AllWork-7.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image8">
+                        <img src="Images/AllWork-8.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image9">
+                        <img src="Images/AllWork-9.png" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image13">
+                        <img src="Images/AllWork-13.JPG" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image17">
+                        <img src="Images/AllWork-17.JPG" width="100%"></button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Image19">
+                        <img src="Images/AllWork-19.jpg" width="100%"></button>
+                </div>
+
+            </div>
+    
+        </div>
+        
+        
+         <!-- Image1 Modal-->
+        <div class="modal fade" id="Image1" tabindex="-1" aria-labelledby="Image1" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Catch of the season</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-1.jpg" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image2 Modal-->
+        <div class="modal fade" id="Image2" tabindex="-1" aria-labelledby="Image2" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">On the Move!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-2.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image3 Modal-->
+        <div class="modal fade" id="Image3" tabindex="-1" aria-labelledby="Image3" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Holiday Card for La Salle University</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-3.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image6 Modal-->
+        <div class="modal fade" id="Image6" tabindex="-1" aria-labelledby="Image6" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Family Acyrlic Portrait</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-6.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+         <!-- Image5 Modal-->
+        <div class="modal fade" id="Image5" tabindex="-1" aria-labelledby="Image5" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Acrylic Lake</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-5.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image4 Modal-->
+        <div class="modal fade" id="Image4" tabindex="-1" aria-labelledby="Image4" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Acrylic Lake Part Two</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-4.jpg" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image10 Modal-->
+        <div class="modal fade" id="Image10" tabindex="-1" aria-labelledby="Image10" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">California Coast</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-10.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image7 Modal-->
+        <div class="modal fade" id="Image7" tabindex="-1" aria-labelledby="Image7" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Scavenger Hunt Christmas Card</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-7.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image8 Modal-->
+        <div class="modal fade" id="Image8" tabindex="-1" aria-labelledby="Image8" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">My first ever mural!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-8.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image9 Modal-->
+        <div class="modal fade" id="Image9" tabindex="-1" aria-labelledby="Image9" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Grandma picking flowers</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-9.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image11 Modal-->
+        <div class="modal fade" id="Image11" tabindex="-1" aria-labelledby="Image11" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Tshirt Design</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-11.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image12 Modal-->
+        <div class="modal fade" id="Image12" tabindex="-1" aria-labelledby="Image12" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">If you know my family, this is accurate.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-12.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image13 Modal-->
+        <div class="modal fade" id="Image13" tabindex="-1" aria-labelledby="Image13" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Confirmation Gift that was printed on a blanket</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-13.JPG" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image14 Modal-->
+        <div class="modal fade" id="Image14" tabindex="-1" aria-labelledby="Image14" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Peep the pup.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-14.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image15 Modal-->
+        <div class="modal fade" id="Image15" tabindex="-1" aria-labelledby="Image15" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Family Holiday Illustration</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-15.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image16 Modal-->
+        <div class="modal fade" id="Image16" tabindex="-1" aria-labelledby="Image16" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Concepts for Office Mural</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-16.PNG" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image17 Modal-->
+        <div class="modal fade" id="Image17" tabindex="-1" aria-labelledby="Image17" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Ohio views</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-17.JPG" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image18 Modal-->
+        <div class="modal fade" id="Image18" tabindex="-1" aria-labelledby="Image18" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Pennsylvania Views</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-18.JPG" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image19 Modal-->
+        <div class="modal fade" id="Image19" tabindex="-1" aria-labelledby="Image19" aria-hidden="true">
+  <div class="modal-dialog  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Home Sweet Home</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-19.jpg" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image20 Modal-->
+        <div class="modal fade" id="Image20" tabindex="-1" aria-labelledby="Image20" aria-hidden="true">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Cardio Infographic</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-20.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!-- Image21 Modal-->
+        <div class="modal fade" id="Image21" tabindex="-1" aria-labelledby="Image21" aria-hidden="true">
+  <div class="modal-dialog  modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Experimenting with Oil Pastels</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<img src="Images/AllWork-21.png" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+        
+        <!--This is the FOOTER-->
+        <div class="container-fluid text-center" style="background-color:#1E2124">
+                <div class="row p-3 justify-content-center">
+                    <div class="col">
+                        <a class="navbar-brand text-light" href="index.html">
+                        <img class="img-fluid object-fit-cover" src="Images/logo.png" alt="logo" width="100px"/><h3>Claire Durham</h3></a>
+                    </div>
+                </div>
+                 
+                <div class="row p-3">
+                    <div class="col">
+                        <a href="Gallery.html" class="footer"><h3>Case Studies</h3></a>
+                    </div>
+                    <div class="col">
+                        <a href="Contact.html" class="footer"><h3>Contact</h3> </a>
+                    </div>
+                    <div class="col">
+                        <a href="AboutMe.html" class="footer"><h3>About</h3></a>
+                    </div>
+                </div>
+        </div>
+        
+        
+    </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
