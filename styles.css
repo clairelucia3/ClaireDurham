@@ -121,13 +121,10 @@ span, h1, h2, .Title {
                 transition-duration: 0.5s;
             }
             
-            .Contact:hover{
+.Contact:hover{
                 background-color:#e6c527;
                 transform: scale(1.05);
             }
-            
-            .About {
-                background-color: rgba(100, 149, 237, 0.47)
-            }
+
 
 
