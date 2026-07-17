@@ -75,6 +75,11 @@ span {
           font-family:Cubano
 }
 
+
+span, h1, h2, .Title {
+                line-height: 1.1
+            }
+
 .sidenav {
           list-style-type: none;
           margin: 0;
