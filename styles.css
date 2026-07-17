@@ -94,4 +94,25 @@ span {
 
 .Title {font-size: 5rem}
 
+.Contact{
+                width: 100%;
+                border-width: medium;
+                border-color:#e6c527;
+                border-radius: 20px;
+                background-color:white;
+                font-family:"Roboto Mono", monospace;
+                font-size: 1rem;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
+            
+            .Contact:hover{
+                background-color:#e6c527;
+                transform: scale(1.05);
+            }
+            
+            .About {
+                background-color: rgba(100, 149, 237, 0.47)
+            }
+
 
