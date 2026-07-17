@@ -92,16 +92,17 @@ span {
                 scroll-margin-top: 120px;
             }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
                 .Title {
                     font-size: 2.5rem;
                 }
             }
             
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
                 .Title {
                     font-size: 5rem;
                 }
+            }
 
 .Contact{
                 width: 100%;
