@@ -5,7 +5,7 @@
 .nav-link-active{
                 color:black;
                 text-decoration: none;
-                font-family: Cubano
+                font-family:"commuters-sans", sans-serif;
             }
 
 li:hover {
@@ -17,17 +17,18 @@ a {
           text-decoration: none
 }
 
-li { 
+li {      
           color:dimgray;
           text-decoration: none;
           transition-property: inherit;
           transition-duration:0.4s;
-          font-family: Cubano;
+          font-family: "commuters-sans", sans-serif;
 }
 
 
-.VerticalLi {      
-          color:dimgray;
+.VerticalLi { 
+          
+          background-color: white;
           text-decoration: none;
           transition-property: inherit;
           transition-duration:0.4s;
@@ -41,7 +42,7 @@ li {
 .footer {
           text-decoration: none;
           color:white;
-          font-family: "Roboto Mono", monospace;
+          font-family:"commuters-sans", sans-serif;
 }
 
 h3 {
@@ -55,47 +56,41 @@ h3:hover {
 }
 
 h1 {
-          font-family:"Roboto Mono", monospace;
+          font-family:"commuters-sans", sans-serif;
 }
 
 h2 {
-          font-family:Cubano
+          font-family:"commuters-sans", sans-serif;
 }
 
-h4  {  
-
-          font-family: "Roboto Mono", monospace;
+h4  {     
+          text-align: left;
+          font-family: "commuters-sans", sans-serif;
 }
 
 p {     
           text-align: left;
+          
 }
 
 span {
-          font-family:Cubano
+          font-family:"commuters-sans", sans-serif;
 }
-
-
-span, h1, h2, .Title {
-                line-height: 1.1
-            }
 
 .sidenav {
           list-style-type: none;
           margin-top: 50px;
           width: 25%;
           height: 100%;
-          position: fixed;
+          position: fixed; 
+
 }
 
-.content {
-          margin-left:27%;
-          height:100%;
+span, h1, h2, .Title {
+                line-height: 1.1
             }
+            
 
-#Point1, #Point2, #Point3, #Point4 {
-                scroll-margin-top: 120px;
-            }
 
 @media screen and (max-width: 700px) {
                 .Title {
@@ -107,24 +102,22 @@ span, h1, h2, .Title {
                 .Title {
                     font-size: 5rem;
                 }
-            }
-
-.Contact{
-                width: 100%;
-                border-width: medium;
-                border-color:#e6c527;
-                border-radius: 20px;
-                background-color:white;
-                font-family:"Roboto Mono", monospace;
-                font-size: 1rem;
-                transition-property: inherit;
-                transition-duration: 0.5s;
-            }
+}
             
-.Contact:hover{
-                background-color:#e6c527;
-                transform: scale(1.05);
+
+.content {
+          margin-left:27%;
+          height:100%;
             }
 
+#Point1, #Point2, #Point3, #Point4 {
+                scroll-margin-top: 120px;
+            }
+
+
+            
+.About {
+          background-color: rgba(100, 149, 237, 0.47);
+            }
 
 
