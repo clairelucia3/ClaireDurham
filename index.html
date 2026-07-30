@@ -76,6 +76,7 @@
             }
             
             .overlay {
+                border-radius: 20px;
                 position: absolute;
                 inset: 0;
                 background: rgba (0,0,0,0);
@@ -93,12 +94,10 @@
                 transition: opacity 0.4 s ease. transform 0.4s ease;
             }
             
-            .img-card:hover {
-                transform: scale(1.05);
-            }
             
             .img-card:hover .overlay {
-                background:white;
+                border-radius: 20px;
+                background:#cfda60;
             }
             
             .img-card:hover .overlay h2 {
@@ -161,7 +160,23 @@
                 background-color:#334f9e;
                 transform: scale(1.05);
             }
+
+            .CardBtn{
+                color:white;
+                width: 50%;
+                border-radius: 20px;
+                background-color:#334f9e;
+                font-family:"commuters-sans", sans-serif;
+                font-size: 1.5rem;
+                transition-property: inherit;
+                transition-duration: 0.5s;
+            }
             
+            .CardBtn:hover{
+                color:white;
+                background-color:#10223f;
+                transform: scale(1.05);
+            }
             
            
         </style>
@@ -256,38 +271,40 @@
             </div>
 
             
-        <div class="container-fluid m-3">
-            <div class="row justify-content-center">
-            <div class="col-sm-12 col-lg-4 p-3">
+        <div class="row justify-content-center p-5 m-3">
+            <div class="col-sm-12 col-lg-4">
                 <a href="UDCA.html" class="img-card">
                     <img src="Images/Index3.png" alt="UDCA" width="100%" />
                     <div class="overlay">
-                        <h2>Upper Dublin Chinese American Association</h2>
-                    </div>
+                            <div class="col text-center">
+                                <h2>Upper Dublin Chinese American Association <br><br><span href="UDCA.html" class="btn CardBtn">View Work</span></h2>
+                            </div>
+                        </div>
                     </a>
                 </div>
         
-            <div class="col-sm-12 col-lg-4 p-3">
+            <div class="col-sm-12 col-lg-4">
                     <a href="Olney.html" class="img-card">
-                    <img src="Images/Index2.png" alt="OLney" width="100%" />
+                    <img src="Images/Index2.png" alt="Olney" width="100%" />
                     <div class="overlay">
-                        <h2>Olney Outlaws</h2>
+                         <div class="col text-center">
+                        <h2>Olney Outlaws<br><br><span href="Olney.html" class="btn CardBtn">View Work</span></h2>
+                        </div>
                     </div>
                     </a>
                 </div>
            
-            <div class="col-sm-12 col-lg-4 p-3">
+            <div class="col-sm-12 col-lg-4">
                     <a href="Mama.html" class="img-card">
                     <img src="Images/Index1.png" alt="Mama" width="100%" />
                     <div class="overlay">
-                        <h2>Mama Mirs Kitchen</h2>
+                         <div class="col text-center">
+                        <h2>Mama Mirs Kitchen<br><br><span href="Mama.html" class="btn CardBtn">View Work</span></h2>
+                        </div>
                     </div>
                     </a>
                 </div>
-
-
             </div>
-        </div>
     </div>
         
          <div class="image-container1">
