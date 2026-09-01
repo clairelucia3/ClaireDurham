@@ -73,7 +73,7 @@ p {
           
 }
 
-span {
+span, .Title {
           font-family:"commuters-sans", sans-serif;
 }
 
@@ -128,6 +128,13 @@ span, h1, h2, .Title {
             .img {
                 overflow: hidden;
                 object-fit: cover
+            }
+
+.img-card {
+                position:relative;
+                display: block;
+                overflow: hidden;
+                text-decoration: none
             }
 
 
