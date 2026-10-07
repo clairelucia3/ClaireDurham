@@ -153,10 +153,73 @@
                 min-height: 100px;
                 
             }
+
+
+
+          
+  #intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;              /* covers the full screen on phones too */
+    z-index: 99999;              /* sits above your existing content */
+    display: grid;
+    place-items: center;
+    background: #10223f;            /* match your video's background color */
+    cursor: pointer;
+    transition: opacity 0.8s ease;
+  }
+  #intro.is-leaving {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #intro video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;           /* fills the screen, crops edges if needed. Use "contain" to show the whole video with bars */
+  }
+  #intro .skip {
+    position: absolute;
+    bottom: max(24px, env(safe-area-inset-bottom));
+    right: 24px;
+    padding: 8px 14px;
+    border: 1px solid #10223f;
+    border-radius: 999px;
+    background: #334f9e;
+    color: #fff;
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  #intro .skip:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+            
+  body{
+    overflow: hidden;            /* stops scrolling behind the splash */
+  }
+
+
+            
            
         </style>
     </head>
     <body>
+
+
+ <div id="intro" role="button" tabindex="0" aria-label="Skip intro and enter site">
+  <video muted playsinline preload="auto" poster="Images/LogoV2White.png">
+    <source src="Images/LogoAnimation.mp4" type="video/mp4">
+  </video>
+  <button class="skip" type="button">Skip</button>
+</div>
+        
+
+        
         <nav class="navbar sticky-top navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"
@@ -503,7 +566,62 @@
     </div>
   </div>
 </div>
-        
+
+
+
+         <script>
+  (function () {
+    var intro = document.getElementById('intro');
+    if (!intro) return;
+ 
+    var video = intro.querySelector('video');
+    var done = false;
+ 
+    // Only show the intro once per visit (not every time they click Home)
+    var seen = false;
+    try { seen = sessionStorage.getItem('introSeen') === '1'; } catch (e) {}
+ 
+    // Skip entirely for repeat views or people who prefer reduced motion
+    var reduceMotion = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ 
+    if (seen || reduceMotion) {
+      intro.remove();
+      return;
+    }
+ 
+    document.body.classList.add('intro-active');
+ 
+    function enterSite() {
+      if (done) return;
+      done = true;
+      try { sessionStorage.setItem('introSeen', '1'); } catch (e) {}
+      intro.classList.add('is-leaving');
+      document.body.classList.remove('intro-active');
+      setTimeout(function () { intro.remove(); }, 800);
+    }
+ 
+    // Auto-enter when the animation ends
+    video.addEventListener('ended', enterSite);
+ 
+    // If the video can't load or autoplay is blocked, don't trap the visitor
+    video.addEventListener('error', enterSite);
+    var playAttempt = video.play();
+    if (playAttempt && playAttempt.catch) playAttempt.catch(enterSite);
+ 
+    // Safety net: never stay longer than 8 seconds
+    setTimeout(enterSite, 8000);
+ 
+    // Click or keypress anywhere enters immediately
+    intro.addEventListener('click', enterSite);
+    intro.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') {
+        e.preventDefault();
+        enterSite();
+      }
+    });
+  })();
+</script>  
         
      </body>
 </html>
