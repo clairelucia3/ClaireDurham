@@ -87,6 +87,7 @@ span, .Title {
 }
 
 span, h1, h2, .Title {
+                text-wrap: balance;
                 line-height: 1.1
             }
             
